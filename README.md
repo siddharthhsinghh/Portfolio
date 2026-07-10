@@ -2,7 +2,7 @@
 
 Personal portfolio website built with vanilla HTML, CSS, and JavaScript.
 
-🌐 **Live site:** [portfolio-seven-rho-981mapmw1e.vercel.app](https://portfolio-seven-rho-981mapmw1e.vercel.app)
+🌐 **Live site:** [portfolio-seven-rho-981mapmw1e.vercel.app](https://siddharth-portfolio-rho-six.vercel.app/)
 
 ---
 
