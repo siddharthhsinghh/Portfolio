@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siddharth Singh · Data Scientist</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+<style>
+/* Project details — scoped to the Projects section only */
+.project-card-detailed{position:relative}
+.project-icon{width:42px;height:42px;color:var(--accent);margin-bottom:.75rem;opacity:.9}
+.project-icon svg{width:100%;height:100%}
+.project-details-btn{display:flex;align-items:center;justify-content:space-between;width:100%;padding:.65rem .75rem;margin-bottom:.65rem;border:1px solid rgba(0,229,255,.2);border-radius:5px;background:rgba(0,229,255,.04);color:var(--accent);font:600 .76rem var(--mono);cursor:pointer;text-align:left;transition:background .2s,border-color .2s}
+.project-details-btn:hover{background:rgba(0,229,255,.08);border-color:var(--accent)}
+.project-details-btn span{font-size:1rem;line-height:1}
+.project-detail-panel{margin-top:.8rem;padding-top:.9rem;border-top:1px solid var(--border)}
+.project-tabs{display:flex;gap:.35rem;overflow-x:auto;margin-bottom:.85rem;padding-bottom:.2rem}
+.project-tab{flex:0 0 auto;border:1px solid var(--border);background:transparent;color:var(--muted);padding:.45rem .6rem;border-radius:4px;font:600 .62rem var(--mono);cursor:pointer;white-space:nowrap}
+.project-tab:hover,.project-tab.active{color:var(--accent);border-color:var(--accent);background:rgba(0,229,255,.06)}
+.project-tab-content{display:none;color:#aaa;font-size:.78rem;line-height:1.65}
+.project-tab-content.active{display:block}
+.project-tab-content p{margin:0 0 .8rem}
+.project-tab-content p:last-child{margin-bottom:0}
+.project-tab-content strong{color:#ddd}
+.project-tab-content code{font-family:var(--mono);color:var(--accent);font-size:.72rem}
+.project-link-profile{margin-top:.1rem}
+@media(max-width:800px){.project-tabs{max-width:100%}}
+</style>
+</head>
+
+<body>
+
+<div id="cursor"></div>
+
+<nav>
+  <a class="nav-logo" href="#hero">SS</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hero-label">Data Scientist &amp; ML Engineer</p>
+
+      <h1 class="hero-name">
+        Siddharth<br />
+        <span>Singh</span>
+      </h1>
+
+      <p class="hero-tagline">
+        I like making sense out of messy data &mdash; whether that&apos;s
+        predicting disease, classifying images, or just getting SQL to
+        cooperate.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          See My Work
+        </a>
+
+        <a href="#contact" class="btn btn-ghost">
+          Say Hello
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap">
+      <img src="images/DSC_6189 copy.jpg" alt="Siddharth Singh">
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <span class="section-label reveal">about me</span>
+    <h2 class="section-title reveal">Hey, I'm Siddharth.</h2>
+    <div class="section-divider reveal"></div>
+
+    <div class="about-text reveal">
+      <p>I'm a CSE graduate who genuinely enjoys the whole process of digging into a dataset, figuring out what it's hiding, and then building something useful out of it.</p>
+
+      <p>I've worked with ML models, deep learning, and BI tools like Power BI and Tableau. I've also done an internship as a Business Analyst intern at ValueDX, which taught me a lot about turning numbers into decisions people actually use.</p>
+
+      <p>When I'm not training models, I'm probably building something with Python or trying to get a voice assistant to understand my accent.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <span class="section-label reveal">skills</span>
+    <h2 class="section-title reveal">My Toolkit</h2>
+    <div class="section-divider reveal"></div>
+
+    <div class="skills-grid">
+
+      <div class="skill-card reveal">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+        <span class="skill-name">Python</span>
+      </div>
+
+      <div class="skill-card reveal">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Machine Learning" />
+        <span class="skill-name">Machine Learning</span>
+      </div>
+
+      <div class="skill-card reveal">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" />
+        <span class="skill-name">Deep Learning</span>
+      </div>
+
+      <div class="skill-card reveal">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" />
+        <span class="skill-name">Power BI</span>
+      </div>
+
+      <div class="skill-card reveal">
+        <img src="images/Tableau-Logo.png" alt="Tableau" />
+        <span class="skill-name">Tableau</span>
+      </div>
+
+      <div class="skill-card reveal">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
+        <span class="skill-name">SQL</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<<section id="projects">
+  <div class="container">
+
+    <span class="section-label reveal">projects</span>
+
+    <h2 class="section-title reveal">
+      Things I've Built
+    </h2>
+
+    <div class="section-divider reveal"></div>
+
+    <div class="projects-grid">
+
+      <!-- PROJECT 01 -->
+      <div class="project-card reveal">
+
+        <div class="project-num">01</div>
+
+        <div class="project-title">
+          Cardiovascular Disease Prediction
+        </div>
+
+        <div class="project-desc">
+          A supervised machine-learning system that uses health
+          and lifestyle information to predict cardiovascular
+          disease risk. The project combines data preprocessing,
+          feature selection, Random Forest classification,
+          model persistence, and a user interface.
+        </div>
+
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">Random Forest</span>
+          <span class="tag">Tkinter</span>
+          <span class="tag">Joblib</span>
+        </div>
+
+        <a
+          class="project-link"
+          href="project-details.html?project=cardiovascular">
+
+          View Project Details →
+
+        </a>
+
+      </div>
+
+
+      <!-- PROJECT 02 -->
+      <div class="project-card reveal">
+
+        <div class="project-num">02</div>
+
+        <div class="project-title">
+          Hybrid CNN–Token Image Classifier
+        </div>
+
+        <div class="project-desc">
+          A hybrid deep-learning image classifier that combines
+          convolutional feature extraction with token-based global
+          context modeling. The project also addresses class
+          imbalance and uses Grad-CAM for model interpretability.
+        </div>
+
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">TensorFlow</span>
+          <span class="tag">Keras</span>
+          <span class="tag">CNN</span>
+          <span class="tag">Grad-CAM</span>
+          <span class="tag">CIFAR-10</span>
+        </div>
+
+        <a
+          class="project-link"
+          href="project-details.html?project=hybrid">
+
+          View Project Details →
+
+        </a>
+
+      </div>
+
+
+      <!-- PROJECT 03 -->
+      <div class="project-card reveal">
+
+        <div class="project-num">03</div>
+
+        <div class="project-title">
+          Apple Stock Price Prediction
+        </div>
+
+        <div class="project-desc">
+          A time-series regression project that uses historical
+          Apple market data and engineered technical indicators
+          to predict closing prices and compare multiple
+          machine-learning models.
+        </div>
+
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">NumPy</span>
+          <span class="tag">yfinance</span>
+          <span class="tag">Feature Engineering</span>
+          <span class="tag">Walk-Forward Validation</span>
+        </div>
+
+        <a
+          class="project-link"
+          href="project-details.html?project=apple">
+
+          View Project Details →
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================
+     EXPERIENCE
+========================= -->
+
+<section id="experience">
+
+  <div class="container">
+
+    <span class="section-label reveal">
+      experience
+    </span>
+
+    <h2 class="section-title reveal">
+      Where I've Worked
+    </h2>
+
+    <div class="section-divider reveal"></div>
+
+    <div class="timeline reveal">
+
+      <div class="timeline-item">
+
+        <div class="timeline-date">
+          March 2026 - June 2026
+        </div>
+
+        <div class="timeline-role">
+          Business Analyst Intern
+        </div>
+
+        <div class="timeline-company">
+          ValueDX
+        </div>
+
+        <div class="timeline-desc">
+
+          • Received hands-on training in automation concepts
+          and business processes.<br>
+
+          • Assisted in gathering and documenting business
+          requirements from stakeholders.<br>
+
+          • Prepared and maintained Business Requirement
+          Documents (BRDs) for project planning.<br>
+
+          • Collaborated with business and technical teams
+          to analyze requirements and improve workflows.<br>
+
+          • Supported project documentation and ensured
+          requirements were clearly communicated to the
+          development.
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact">
+
+  <div class="container">
+
+    <span class="section-label reveal">
+      contact
+    </span>
+
+    <h2 class="section-title reveal">
+      Let's Talk
+    </h2>
+
+    <div
+      class="section-divider"
+      style="margin-bottom:1.4rem">
+    </div>
+
+    <p class="contact-sub reveal">
+
+      Always happy to chat about data, ML projects,
+      or opportunities. Drop me a message.
+
+    </p>
+
+    <div class="contact-links reveal">
+
+      <a
+        class="contact-link"
+        href="https://github.com/siddharthhsinghh">
+
+        <svg viewBox="0 0 24 24">
+
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+
+        </svg>
+
+        GitHub
+
+      </a>
+
+
+      <a
+        class="contact-link"
+        href="https://www.linkedin.com/in/siddharth-singh-0a5b6325">
+
+        <svg viewBox="0 0 24 24">
+
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+
+        </svg>
+
+        LinkedIn
+
+      </a>
+
+
+      <a
+        class="contact-link"
+        href="#">
+
+        <svg viewBox="0 0 24 24">
+
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+
+        </svg>
+
+        siddharth100305@gmail.com
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  © 2026 Siddharth Singh · Built with HTML, CSS &amp; JavaScript
+
+</footer>
+
+
+<!-- =========================
+     PROJECT INTERACTION
+========================= -->
+
+<script>
+
+document
+  .querySelectorAll('.project-details-btn')
+  .forEach(button => {
+
+    button.addEventListener('click', () => {
+
+      const panel =
+        document.getElementById(
+          'details-' + button.dataset.project
+        );
+
+      const isOpen =
+        !panel.hasAttribute('hidden');
+
+
+      /*
+       * Close all project panels
+       */
+
+      document
+        .querySelectorAll('.project-detail-panel')
+        .forEach(p =>
+          p.setAttribute('hidden', '')
+        );
+
+
+      /*
+       * Reset all plus/minus icons
+       */
+
+      document
+        .querySelectorAll('.project-details-btn span')
+        .forEach(s =>
+          s.textContent = '+'
+        );
+
+
+      /*
+       * Open selected project
+       */
+
+      if (!isOpen) {
+
+        panel.removeAttribute('hidden');
+
+        button
+          .querySelector('span')
+          .textContent = '−';
+
+      }
+
+    });
+
+  });
+
+
+
+/*
+ * Project tabs
+ */
+
+document
+  .querySelectorAll('.project-detail-panel')
+  .forEach(panel => {
+
+    panel
+      .querySelectorAll('.project-tab')
+      .forEach(tab => {
+
+        tab.addEventListener('click', () => {
+
+          const target =
+            tab.dataset.tab;
+
+
+          /*
+           * Activate selected tab
+           */
+
+          panel
+            .querySelectorAll('.project-tab')
+            .forEach(t =>
+
+              t.classList.toggle(
+                'active',
+                t === tab
+              )
+
+            );
+
+
+          /*
+           * Show selected content
+           */
+
+          panel
+            .querySelectorAll(
+              '.project-tab-content'
+            )
+            .forEach(content =>
+
+              content.classList.toggle(
+                'active',
+                content.id === target
+              )
+
+            );
+
+        });
+
+      });
+
+  });
+
+</script>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

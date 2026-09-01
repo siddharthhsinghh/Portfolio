@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>Project Details · Siddharth Singh</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="style.css">
+
+
+  <style>
+
+    /*
+    ========================================
+    PROJECT DETAILS PAGE
+    ========================================
+    */
+
+    .project-page {
+
+      min-height: 100vh;
+
+      padding:
+        110px
+        0
+        80px;
+
+    }
+
+
+    .project-page-container {
+
+      width: min(
+        1100px,
+        calc(100% - 40px)
+      );
+
+      margin: auto;
+
+    }
+
+
+    .back-button {
+
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 8px;
+
+      margin-bottom: 55px;
+
+      color: var(--muted);
+
+      font-family: var(--mono);
+
+      font-size: .75rem;
+
+      text-decoration: none;
+
+      transition: .2s;
+
+    }
+
+
+    .back-button:hover {
+
+      color: var(--accent);
+
+    }
+
+
+    .project-header {
+
+      border-bottom:
+        1px solid
+        var(--border);
+
+      padding-bottom: 45px;
+
+      margin-bottom: 45px;
+
+    }
+
+
+    .project-number {
+
+      font-family: var(--mono);
+
+      color: var(--accent);
+
+      font-size: .8rem;
+
+      margin-bottom: 15px;
+
+    }
+
+
+    .project-header h1 {
+
+      font-size:
+        clamp(
+          2.5rem,
+          6vw,
+          5rem
+        );
+
+      line-height: 1;
+
+      margin: 0 0 25px;
+
+      letter-spacing: -2px;
+
+    }
+
+
+    .project-header-description {
+
+      max-width: 750px;
+
+      color: var(--muted);
+
+      font-size: 1.05rem;
+
+      line-height: 1.8;
+
+    }
+
+
+    .project-stack {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 8px;
+
+      margin-top: 25px;
+
+    }
+
+
+    .project-stack span {
+
+      padding:
+        7px
+        11px;
+
+      border:
+        1px solid
+        var(--border);
+
+      border-radius: 4px;
+
+      color: var(--accent);
+
+      font-family: var(--mono);
+
+      font-size: .68rem;
+
+    }
+
+
+    /*
+    ========================================
+    CONTENT
+    ========================================
+    */
+
+    .detail-section {
+
+      margin-bottom: 60px;
+
+    }
+
+
+    .detail-label {
+
+      font-family: var(--mono);
+
+      color: var(--accent);
+
+      font-size: .7rem;
+
+      margin-bottom: 12px;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1px;
+
+    }
+
+
+    .detail-section h2 {
+
+      font-size: 1.8rem;
+
+      margin:
+        0
+        0
+        20px;
+
+    }
+
+
+    .detail-section p {
+
+      max-width: 850px;
+
+      color: #aaa;
+
+      line-height: 1.8;
+
+      margin-bottom: 18px;
+
+    }
+
+
+    /*
+    ========================================
+    PIPELINE
+    ========================================
+    */
+
+    .pipeline {
+
+      margin-top: 25px;
+
+      padding: 25px;
+
+      border:
+        1px solid
+        var(--border);
+
+      border-radius: 6px;
+
+      background:
+        rgba(
+          255,
+          255,
+          255,
+          .015
+        );
+
+      font-family: var(--mono);
+
+      font-size: .75rem;
+
+      line-height: 2;
+
+      color: #bbb;
+
+    }
+
+
+    .pipeline span {
+
+      color: var(--accent);
+
+    }
+
+
+    /*
+    ========================================
+    RESULT BOX
+    ========================================
+    */
+
+    .result-box {
+
+      border-left:
+        2px solid
+        var(--accent);
+
+      padding:
+        20px
+        25px;
+
+      background:
+        rgba(
+          0,
+          229,
+          255,
+          .025
+        );
+
+      margin-top: 25px;
+
+    }
+
+
+    .result-box strong {
+
+      color: var(--accent);
+
+    }
+
+
+    /*
+    ========================================
+    GITHUB BUTTON
+    ========================================
+    */
+
+    .github-button {
+
+      display: inline-block;
+
+      margin-top: 10px;
+
+      padding:
+        12px
+        18px;
+
+      border:
+        1px solid
+        var(--accent);
+
+      border-radius: 4px;
+
+      color: var(--accent);
+
+      font-family: var(--mono);
+
+      font-size: .72rem;
+
+      text-decoration: none;
+
+      transition: .2s;
+
+    }
+
+
+    .github-button:hover {
+
+      background:
+        rgba(
+          0,
+          229,
+          255,
+          .08
+        );
+
+    }
+
+
+    @media(max-width:700px){
+
+      .project-page{
+
+        padding-top:90px;
+
+      }
+
+      .project-header h1{
+
+        letter-spacing:-1px;
+
+      }
+
+      .detail-section{
+
+        margin-bottom:45px;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <nav>
+
+    <a
+      class="nav-logo"
+      href="index.html">
+
+      SS
+
+    </a>
+
+    <ul class="nav-links">
+
+      <li>
+        <a href="index.html#about">
+          About
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#skills">
+          Skills
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#projects">
+          Projects
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#experience">
+          Experience
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#contact">
+          Contact
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+
+  <main class="project-page">
+
+    <div
+      class="project-page-container">
+
+
+      <a
+        href="index.html#projects"
+        class="back-button">
+
+        ← Back to Projects
+
+      </a>
+
+
+      <!-- PROJECT HEADER -->
+
+      <header
+        class="project-header">
+
+        <div
+          class="project-number"
+          id="project-number">
+
+          01
+
+        </div>
+
+
+        <h1 id="project-title">
+
+          Cardiovascular Disease Prediction
+
+        </h1>
+
+
+        <p
+          class="project-header-description"
+          id="project-description">
+
+        </p>
+
+
+        <div
+          class="project-stack"
+          id="project-stack">
+
+        </div>
+
+      </header>
+
+
+      <!-- OVERVIEW -->
+
+      <section
+        class="detail-section">
+
+        <div class="detail-label">
+          01 · Overview
+        </div>
+
+        <h2>
+          What the Project Does
+        </h2>
+
+        <div id="overview"></div>
+
+      </section>
+
+
+      <!-- ARCHITECTURE -->
+
+      <section
+        class="detail-section">
+
+        <div class="detail-label">
+          02 · Architecture / Pipeline
+        </div>
+
+        <h2>
+          How It Works
+        </h2>
+
+        <div id="architecture"></div>
+
+      </section>
+
+
+      <!-- RESULTS -->
+
+      <section
+        class="detail-section">
+
+        <div class="detail-label">
+          03 · Results / Performance
+        </div>
+
+        <h2>
+          Results
+        </h2>
+
+        <div id="results"></div>
+
+      </section>
+
+
+      <!-- GITHUB -->
+
+      <section
+        class="detail-section">
+
+        <div class="detail-label">
+          Source Code
+        </div>
+
+        <h2>
+          Explore the Project
+        </h2>
+
+        <p>
+          The complete implementation and source code
+          are available on GitHub.
+        </p>
+
+        <a
+          id="github-link"
+          class="github-button"
+          target="_blank"
+          rel="noopener">
+
+          View on GitHub →
+
+        </a>
+
+      </section>
+
+
+    </div>
+
+  </main>
+
+
+<script>
+
+
+/*
+================================================
+PROJECT DATA
+================================================
+*/
+
+const projects = {
+
+
+  /*
+  ==============================================
+  CARDIOVASCULAR
+  ==============================================
+  */
+
+  cardiovascular: {
+
+    number: "01",
+
+    title:
+      "Cardiovascular Disease Prediction",
+
+    description:
+      "A supervised machine-learning system that uses health and lifestyle information to predict cardiovascular disease risk.",
+
+    stack: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "scikit-learn",
+      "Random Forest",
+      "Tkinter",
+      "Joblib"
+    ],
+
+    overview: `
+
+      <p>
+        The goal of this project is to predict whether a
+        person is at risk of cardiovascular disease using
+        patient health and lifestyle information.
+      </p>
+
+      <p>
+        The input data includes attributes such as age,
+        gender, height, weight, blood pressure, cholesterol,
+        glucose, smoking, alcohol consumption and physical
+        activity.
+      </p>
+
+      <p>
+        The project follows a supervised classification
+        approach, where the model learns from historical
+        examples containing known outcomes and then predicts
+        the outcome for new input data.
+      </p>
+
+      <p>
+        A graphical user interface was also created using
+        Tkinter so that users can enter patient information
+        and receive a prediction without directly interacting
+        with the Python model.
+      </p>
+
+    `,
+
+    architecture: `
+
+      <p>
+        The complete workflow begins with loading the
+        cardiovascular disease dataset into a Pandas
+        DataFrame.
+      </p>
+
+      <div class="pipeline">
+
+        Dataset
+
+        <span>→</span>
+
+        Data Cleaning
+
+        <span>→</span>
+
+        Preprocessing
+
+        <span>→</span>
+
+        Feature Selection
+
+        <span>→</span>
+
+        Train/Test Split
+
+        <span>→</span>
+
+        StandardScaler
+
+        <span>→</span>
+
+        Random Forest
+
+        <span>→</span>
+
+        Evaluation
+
+        <span>→</span>
+
+        Joblib
+
+        <span>→</span>
+
+        Tkinter Application
+
+      </div>
+
+      <p>
+        StandardScaler is used to apply consistent numerical
+        preprocessing. The trained Random Forest model,
+        scaler and feature information are saved using
+        Joblib.
+      </p>
+
+      <p>
+        Random Forest is an ensemble learning algorithm that
+        builds multiple decision trees and combines their
+        predictions. In this project, the classifier uses
+        300 decision trees.
+      </p>
+
+      <p>
+        When a user enters information through the GUI,
+        the input is converted into the required numerical
+        format, transformed using the saved scaler and then
+        passed to the trained model.
+      </p>
+
+    `,
+
+    results: `
+
+      <p>
+        The project evaluates the trained classifier using
+        accuracy on the held-out test data.
+      </p>
+
+      <div class="result-box">
+
+        <strong>Evaluation:</strong>
+
+        The implementation calculates test-set accuracy.
+        The current project does not calculate precision,
+        recall, F1-score or ROC-AUC.
+
+      </div>
+
+      <p>
+        The trained model and preprocessing components are
+        persisted so that the same pipeline can be reused
+        when making predictions through the application.
+      </p>
+
+    `,
+
+    github:
+      "https://github.com/siddharthhsinghh/Cardiovascular-Disease-Prediction"
+
+  },
+
+
+  /*
+  ==============================================
+  HYBRID IMAGE CLASSIFIER
+  ==============================================
+  */
+
+  hybrid: {
+
+    number: "02",
+
+    title:
+      "Hybrid CNN–Token Image Classifier",
+
+    description:
+      "A hybrid deep-learning image classifier that combines CNN-based feature extraction with token-based global context modeling.",
+
+    stack: [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "CNN",
+      "CIFAR-10",
+      "Class Weighting",
+      "Grad-CAM"
+    ],
+
+    overview: `
+
+      <p>
+        This project focuses on image classification using
+        the CIFAR-10 dataset containing ten different image
+        categories.
+      </p>
+
+      <p>
+        The main idea is to combine convolutional neural
+        networks with token-based global context modeling.
+        The CNN extracts local visual information such as
+        edges, textures and shapes, while the token-based
+        component helps the model capture relationships
+        between different regions of an image.
+      </p>
+
+      <p>
+        The project also studies the effect of class imbalance
+        and uses class-weighted learning to give greater
+        importance to underrepresented classes.
+      </p>
+
+      <p>
+        Grad-CAM is used as an interpretability technique to
+        visualize which regions of an image contributed to
+        the model's prediction.
+      </p>
+
+    `,
+
+    architecture: `
+
+      <p>
+        The model begins with CIFAR-10 images which are
+        preprocessed before being passed through the
+        convolutional feature extractor.
+      </p>
+
+      <div class="pipeline">
+
+        CIFAR-10 Images
+
+        <span>→</span>
+
+        Preprocessing
+
+        <span>→</span>
+
+        CNN Feature Extraction
+
+        <span>→</span>
+
+        Feature Maps
+
+        <span>→</span>
+
+        Patch / Token Creation
+
+        <span>→</span>
+
+        Global Context Modeling
+
+        <span>→</span>
+
+        Feature Fusion
+
+        <span>→</span>
+
+        Classification Head
+
+        <span>→</span>
+
+        Prediction
+
+      </div>
+
+      <p>
+        The CNN extracts spatial features from the image.
+        These feature maps are transformed into tokens,
+        allowing the following component to reason about
+        information from different image regions.
+      </p>
+
+      <p>
+        Class-weighted cross-entropy loss is used when
+        training with imbalanced data. This increases the
+        contribution of minority classes during optimization.
+      </p>
+
+      <p>
+        Grad-CAM generates a heatmap based on gradients
+        flowing through the network, providing a visual
+        indication of the image regions that influenced
+        the prediction.
+      </p>
+
+    `,
+
+    results: `
+
+      <p>
+        The project achieved more than 88% classification
+        accuracy across the ten CIFAR-10 classes.
+      </p>
+
+      <div class="result-box">
+
+        <strong>Reported Performance:</strong>
+
+        88%+ CIFAR-10 classification accuracy.
+
+      </div>
+
+      <p>
+        Evaluation includes accuracy, precision, recall,
+        F1-score, macro F1-score, confusion matrices and
+        training/validation curves.
+      </p>
+
+      <p>
+        Macro F1 is particularly useful for evaluating the
+        effect of class imbalance because each class receives
+        equal importance when calculating the final average.
+      </p>
+
+    `,
+
+    github:
+      "https://github.com/siddharthhsinghh/Hybrid-Image-Classification"
+
+  },
+
+
+  /*
+  ==============================================
+  APPLE STOCK
+  ==============================================
+  */
+
+  apple: {
+
+    number: "03",
+
+    title:
+      "Apple Stock Price Prediction",
+
+    description:
+      "A time-series regression project that uses historical Apple market data and engineered technical indicators to predict closing prices.",
+
+    stack: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "yfinance",
+      "Feature Engineering",
+      "Technical Indicators",
+      "Walk-Forward Validation",
+      "Regression"
+    ],
+
+    overview: `
+
+      <p>
+        The goal of this project is to use historical Apple
+        stock-market data to predict Apple's closing price
+        and compare different machine-learning models.
+      </p>
+
+      <p>
+        The project works with Apple stock using the AAPL
+        ticker symbol and historical data beginning from
+        January 2010.
+      </p>
+
+      <p>
+        Because the target is a numerical closing price,
+        this is treated as a supervised regression problem.
+      </p>
+
+      <p>
+        The workflow focuses heavily on feature engineering
+        and time-aware validation so that information from
+        the future does not accidentally influence model
+        training.
+      </p>
+
+    `,
+
+    architecture: `
+
+      <p>
+        Historical market data is collected using yfinance
+        and processed using Pandas and NumPy.
+      </p>
+
+      <div class="pipeline">
+
+        Historical AAPL Data
+
+        <span>→</span>
+
+        Data Cleaning
+
+        <span>→</span>
+
+        Feature Engineering
+
+        <span>→</span>
+
+        Technical Indicators
+
+        <span>→</span>
+
+        Time-Aware Split
+
+        <span>→</span>
+
+        Scaling
+
+        <span>→</span>
+
+        Multiple Regression Models
+
+        <span>→</span>
+
+        Walk-Forward Validation
+
+        <span>→</span>
+
+        Evaluation
+
+        <span>→</span>
+
+        Model Comparison
+
+      </div>
+
+      <p>
+        Engineered features include lagged prices, simple
+        moving averages, exponential moving averages,
+        price-to-SMA ratios, RSI, MACD, ROC, ATR,
+        Bollinger Bands, volume features, daily returns,
+        volatility and price spreads.
+      </p>
+
+      <p>
+        The project uses expanding-window walk-forward
+        validation with 60-day test windows instead of
+        randomly shuffling time-series observations.
+      </p>
+
+      <p>
+        The models compared include Ridge Regression,
+        Lasso, Elastic Net, Random Forest and Gradient
+        Boosting. A naïve previous-close baseline is also
+        used for comparison.
+      </p>
+
+      <p>
+        Scaling is performed separately within each training
+        window to reduce the risk of data leakage from future
+        observations.
+      </p>
+
+    `,
+
+    results: `
+
+      <p>
+        The models are evaluated using MAE, RMSE, R² and
+        MAPE.
+      </p>
+
+      <div class="result-box">
+
+        <strong>Model Selection:</strong>
+
+        The project ranks models using MAE while also
+        considering RMSE, R² and MAPE to understand
+        different aspects of prediction performance.
+
+      </div>
+
+      <p>
+        Ridge Regression is identified as the best-performing
+        model among the compared linear candidates based on
+        the reported held-out validation performance.
+      </p>
+
+      <p>
+        Actual-versus-predicted prices, prediction errors
+        and cumulative MAE are visualized to understand
+        model behavior over time.
+      </p>
+
+    `,
+
+    github:
+      "https://github.com/siddharthhsinghh/Apple-Stock-Price-Prediction"
+
+  }
+
+};
+
+
+/*
+================================================
+READ URL
+================================================
+*/
+
+const params =
+  new URLSearchParams(
+    window.location.search
+  );
+
+
+const projectName =
+  params.get("project");
+
+
+const project =
+  projects[projectName];
+
+
+/*
+================================================
+FALLBACK
+================================================
+*/
+
+if (!project) {
+
+  window.location.href =
+    "index.html#projects";
+
+}
+
+
+/*
+================================================
+POPULATE PAGE
+================================================
+*/
+
+else {
+
+  document.title =
+    project.title +
+    " · Siddharth Singh";
+
+
+  document
+    .getElementById("project-number")
+    .textContent =
+    project.number;
+
+
+  document
+    .getElementById("project-title")
+    .textContent =
+    project.title;
+
+
+  document
+    .getElementById("project-description")
+    .textContent =
+    project.description;
+
+
+  document
+    .getElementById("overview")
+    .innerHTML =
+    project.overview;
+
+
+  document
+    .getElementById("architecture")
+    .innerHTML =
+    project.architecture;
+
+
+  document
+    .getElementById("results")
+    .innerHTML =
+    project.results;
+
+
+  const stack =
+    document.getElementById(
+      "project-stack"
+    );
+
+
+  project.stack.forEach(
+    technology => {
+
+      const tag =
+        document.createElement("span");
+
+      tag.textContent =
+        technology;
+
+      stack.appendChild(tag);
+
+    }
+  );
+
+
+  const github =
+    document.getElementById(
+      "github-link"
+    );
+
+
+  github.href =
+    project.github;
+
+}
+
+</script>
+
+
+</body>
+
+</html>
