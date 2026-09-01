@@ -39,7 +39,7 @@ portfolio/
 ├── index.html       # Main HTML
 ├── style.css        # All styles
 ├── script.js        # JS interactions
-├── project-details.html 
+├── project-details.html # HTML
 ├── images/
 │   ├── DSC_6189 copy.jpg   # Profile photo
 │   └── Tableau-Logo.png    # Tableau skill logo
