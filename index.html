@@ -4,35 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Siddharth Singh · Data Scientist</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="style.css" />
-
-<style>
-/* Project details — scoped to the Projects section only */
-.project-card-detailed{position:relative}
-.project-icon{width:42px;height:42px;color:var(--accent);margin-bottom:.75rem;opacity:.9}
-.project-icon svg{width:100%;height:100%}
-.project-details-btn{display:flex;align-items:center;justify-content:space-between;width:100%;padding:.65rem .75rem;margin-bottom:.65rem;border:1px solid rgba(0,229,255,.2);border-radius:5px;background:rgba(0,229,255,.04);color:var(--accent);font:600 .76rem var(--mono);cursor:pointer;text-align:left;transition:background .2s,border-color .2s}
-.project-details-btn:hover{background:rgba(0,229,255,.08);border-color:var(--accent)}
-.project-details-btn span{font-size:1rem;line-height:1}
-.project-detail-panel{margin-top:.8rem;padding-top:.9rem;border-top:1px solid var(--border)}
-.project-tabs{display:flex;gap:.35rem;overflow-x:auto;margin-bottom:.85rem;padding-bottom:.2rem}
-.project-tab{flex:0 0 auto;border:1px solid var(--border);background:transparent;color:var(--muted);padding:.45rem .6rem;border-radius:4px;font:600 .62rem var(--mono);cursor:pointer;white-space:nowrap}
-.project-tab:hover,.project-tab.active{color:var(--accent);border-color:var(--accent);background:rgba(0,229,255,.06)}
-.project-tab-content{display:none;color:#aaa;font-size:.78rem;line-height:1.65}
-.project-tab-content.active{display:block}
-.project-tab-content p{margin:0 0 .8rem}
-.project-tab-content p:last-child{margin-bottom:0}
-.project-tab-content strong{color:#ddd}
-.project-tab-content code{font-family:var(--mono);color:var(--accent);font-size:.72rem}
-.project-link-profile{margin-top:.1rem}
-@media(max-width:800px){.project-tabs{max-width:100%}}
-</style>
 </head>
-
 <body>
 
 <div id="cursor"></div>
@@ -48,61 +23,43 @@
   </ul>
 </nav>
 
+<!-- HERO -->
 <section id="hero">
   <div class="hero-inner">
     <div class="hero-text">
-      <p class="hero-label">Data Scientist &amp; ML Engineer</p>
-
-      <h1 class="hero-name">
-        Siddharth<br />
-        <span>Singh</span>
-      </h1>
-
-      <p class="hero-tagline">
-        I like making sense out of messy data &mdash; whether that&apos;s
-        predicting disease, classifying images, or just getting SQL to
-        cooperate.
-      </p>
-
+      <h1 class="hero-name">Siddharth<br /><span>Singh</span></h1>
+      <p class="hero-tagline">I like making sense out of messy data &mdash; whether that&apos;s predicting disease, classifying images, or just getting SQL to cooperate.</p>
       <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">
-          See My Work
-        </a>
-
-        <a href="#contact" class="btn btn-ghost">
-          Say Hello
-        </a>
+        <a href="#projects" class="btn btn-primary">See My Work</a>
+        <a href="#contact" class="btn btn-ghost">Say Hello</a>
       </div>
     </div>
-
     <div class="hero-photo-wrap">
       <img src="images/DSC_6189 copy.jpg" alt="Siddharth Singh">
     </div>
   </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about">
   <div class="container">
     <span class="section-label reveal">about me</span>
     <h2 class="section-title reveal">Hey, I'm Siddharth.</h2>
     <div class="section-divider reveal"></div>
-
     <div class="about-text reveal">
-      <p>I'm a CSE graduate who genuinely enjoys the whole process of digging into a dataset, figuring out what it's hiding, and then building something useful out of it.</p>
-
-      <p>I've worked with ML models, deep learning, and BI tools like Power BI and Tableau. I've also done an internship as a Business Analyst intern at ValueDX, which taught me a lot about turning numbers into decisions people actually use.</p>
-
-      <p>When I'm not training models, I'm probably building something with Python or trying to get a voice assistant to understand my accent.</p>
+      <p>I'm a CSE graduate from MIT ADT University, Pune who genuinely enjoys the whole process of digging into a dataset, figuring out what it's hiding, and then building something useful out of it.</p>
+      <p>I've worked with ML models, deep learning, statistical analysis, and BI tools like Power BI and Tableau. I've also done an internship as a Business Analyst at ValueDX, which taught me a lot about turning numbers into decisions people actually use.</p>
+      <p>When I'm not training models, I'm probably building something with Python or trying to convince a neural network that it's wrong.</p>
     </div>
   </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
   <div class="container">
     <span class="section-label reveal">skills</span>
     <h2 class="section-title reveal">My Toolkit</h2>
     <div class="section-divider reveal"></div>
-
     <div class="skills-grid">
 
       <div class="skill-card reveal">
@@ -111,13 +68,39 @@
       </div>
 
       <div class="skill-card reveal">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Machine Learning" />
-        <span class="skill-name">Machine Learning</span>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" />
+        <span class="skill-name">NumPy</span>
+      </div>
+
+      <div class="skill-card reveal">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="pandas" />
+        <span class="skill-name">pandas</span>
+      </div>
+
+
+      <div class="skill-card reveal">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="Matplotlib" />
+        <span class="skill-name">Matplotlib</span>
+      </div>
+
+      <div class="skill-card reveal">
+        <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="Seaborn" />
+        <span class="skill-name">Seaborn</span>
+      </div>
+
+      <div class="skill-card reveal">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit-learn" />
+        <span class="skill-name">scikit-learn</span>
       </div>
 
       <div class="skill-card reveal">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" />
-        <span class="skill-name">Deep Learning</span>
+        <span class="skill-name">TensorFlow</span>
+      </div>
+
+      <div class="skill-card reveal">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" alt="Keras" />
+        <span class="skill-name">Keras</span>
       </div>
 
       <div class="skill-card reveal">
@@ -135,411 +118,428 @@
         <span class="skill-name">SQL</span>
       </div>
 
+      <div class="skill-card reveal">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" />
+        <span class="skill-name">AWS</span>
+      </div>
+
     </div>
   </div>
 </section>
 
-<<section id="projects">
+<!-- PROJECTS -->
+<section id="projects">
   <div class="container">
-
     <span class="section-label reveal">projects</span>
-
-    <h2 class="section-title reveal">
-      Things I've Built
-    </h2>
-
+    <h2 class="section-title reveal">Things I've Built</h2>
     <div class="section-divider reveal"></div>
+    <div class="projects-list">
 
-    <div class="projects-grid">
-
-      <!-- PROJECT 01 -->
+      <!-- PROJECT 01: APPLE STOCK -->
       <div class="project-card reveal">
-
-        <div class="project-num">01</div>
-
-        <div class="project-title">
-          Cardiovascular Disease Prediction
+        <div class="project-card-header">
+          <div class="project-card-left">
+            <div class="project-num">01</div>
+            <h3 class="project-title">Apple Stock Price Prediction</h3>
+            <p class="project-summary">
+              A time-series regression project on 4,150+ trading days of AAPL data. Engineered 30+ technical indicators from scratch, applied inferential statistics to validate features, and benchmarked 7 ML models using walk-forward validation across 19 sequential windows. Ridge Regression won &mdash; R&sup2; 0.9986, MAE $1.10, MAPE 0.59%, beating the naive baseline by 53%.
+            </p>
+            <p class="project-during">During this project,</p>
+            <ul class="project-bullets">
+              <li>Performed end-to-end EDA and feature engineering on AAPL historical price data, engineering 30+ technical indicators including RSI, MACD, Bollinger Bands, ATR, SMA/EMA, ROC, and rolling volatility &mdash; all built from past values only to prevent data leakage.</li>
+              <li>Applied descriptive statistics (mean, median, standard deviation, skewness, kurtosis) and probability distribution analysis to understand price behaviour and validate feature distributions before modelling.</li>
+              <li>Conducted inferential statistical analysis using correlation matrices and hypothesis testing to identify significant predictors and reduce noise in the feature set prior to model training.</li>
+              <li>Implemented walk-forward validation (19 windows, ~1,140 out-of-sample test days) to simulate real trading conditions &mdash; StandardScaler fitted on training data only per window, preventing test-set statistics from leaking into preprocessing.</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">pandas</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">scikit-learn</span>
+              <span class="tag">Ridge Regression</span>
+              <span class="tag">yfinance</span>
+              <span class="tag">Walk-Forward CV</span>
+              <span class="tag">Matplotlib</span>
+              <span class="tag">Seaborn</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn-details" onclick="toggleDetails(this)">View Project Details &#8595;</button>
+              <a class="project-link" href="https://github.com/siddharthhsinghh/Apple-Stock-Prediction" target="_blank" rel="noopener">GitHub &rarr;</a>
+            </div>
+          </div>
+          <div class="project-card-right">
+            <div class="project-icon-box">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="80" height="80" rx="12" fill="rgba(0,229,255,0.07)"/>
+                <polyline points="10,62 22,45 35,52 48,28 62,36" stroke="#00e5ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="62" cy="36" r="3.5" fill="#00e5ff"/>
+                <line x1="10" y1="65" x2="70" y2="65" stroke="#2a2a2a" stroke-width="1.5"/>
+                <line x1="10" y1="18" x2="10" y2="65" stroke="#2a2a2a" stroke-width="1.5"/>
+              </svg>
+            </div>
+          </div>
         </div>
 
-        <div class="project-desc">
-          A supervised machine-learning system that uses health
-          and lifestyle information to predict cardiovascular
-          disease risk. The project combines data preprocessing,
-          feature selection, Random Forest classification,
-          model persistence, and a user interface.
+        <div class="project-details">
+          <div class="detail-sidebar">
+            <p class="detail-nav-item active" onclick="switchTab(this,'ap-ov')">Overview</p>
+            <p class="detail-nav-item" onclick="switchTab(this,'ap-eda')">EDA &amp; Statistics</p>
+            <p class="detail-nav-item" onclick="switchTab(this,'ap-fe')">Feature Engineering</p>
+            <p class="detail-nav-item" onclick="switchTab(this,'ap-wf')">Walk-Forward CV</p>
+            <p class="detail-nav-item" onclick="switchTab(this,'ap-res')">Model Results</p>
+          </div>
+          <div class="detail-content">
+
+            <div class="detail-tab active" id="ap-ov">
+              <h4>Overview</h4>
+              <ul>
+                <li>Goal: use historical AAPL price data to predict the next day&rsquo;s closing price and determine which ML model does it best. This is a supervised regression problem &mdash; the model predicts an actual dollar value, not a category.</li>
+                <li>Data pulled via <code>yfinance</code>: AAPL from 2010-01-01 to present, ~4,150 trading days of Open, High, Low, Close, Volume (OHLCV). After feature engineering and dropping NaN rows from rolling windows: ~3,950 clean rows.</li>
+                <li>7 models benchmarked: Ridge (with and without control feature), Lasso, ElasticNet, Random Forest, Gradient Boosting, and a Naive baseline (predict yesterday&rsquo;s price as today&rsquo;s).</li>
+                <li>A random Gaussian control feature is deliberately included as a sanity check &mdash; Ridge with vs. without it scored $1.1026 vs $1.1008 MAE, confirming the model captures real signal, not noise.</li>
+              </ul>
+            </div>
+
+            <div class="detail-tab" id="ap-eda">
+              <h4>EDA &amp; Statistical Analysis</h4>
+              <p class="detail-scope-label">What was analysed</p>
+              <ul>
+                <li><strong>Descriptive statistics:</strong> mean, median, standard deviation, skewness, and kurtosis applied to price and volume series to understand distribution shape and identify outliers before modelling.</li>
+                <li><strong>Probability distribution analysis:</strong> daily return distributions plotted and tested against normality &mdash; AAPL returns show slight negative skew and fat tails (leptokurtosis), informing model choice.</li>
+                <li><strong>Inferential statistics:</strong> correlation matrices computed across all 30+ engineered features to identify multicollinearity; hypothesis testing used to validate which indicators carry statistically significant predictive signal.</li>
+                <li><strong>Feature validation:</strong> distributions of all engineered features inspected before model training to confirm no NaN leakage, scale inconsistencies, or look-ahead bias in any indicator.</li>
+              </ul>
+              <p class="detail-skills">Skills: Descriptive Statistics, Inferential Statistics, Hypothesis Testing, Correlation Analysis, Matplotlib, Seaborn.</p>
+            </div>
+
+            <div class="detail-tab" id="ap-fe">
+              <h4>Feature Engineering</h4>
+              <p class="detail-scope-label">30+ indicators built from past values only</p>
+              <ul>
+                <li><strong>Lag features:</strong> Close shifted back 1, 2, 3, 5, 10, 20, 60 days + yesterday&rsquo;s Open/High/Low/Volume &mdash; gives the model direct memory of recent price levels without leaking future data.</li>
+                <li><strong>Moving averages:</strong> SMA (10/20/50/200-day) and EMA (12/26-day) for trend identification; Close/SMA_20 and Close/SMA_50 ratios as scale-invariant trend-strength signals.</li>
+                <li><strong>Momentum indicators:</strong> RSI-14 (overbought/oversold oscillator 0&ndash;100), MACD (EMA12 &minus; EMA26), MACD signal line, MACD histogram, ROC-5 and ROC-20 (% price change over 5 and 20 days).</li>
+                <li><strong>Volatility features:</strong> ATR-14 (accounts for gap days), Bollinger Band width (20-day SMA &plusmn;2&sigma;), 20-day rolling standard deviation, volume ratio vs 20-day average, daily return, high-low spread, close-open spread.</li>
+              </ul>
+              <p class="detail-skills">Skills: Feature Engineering, pandas, NumPy, yfinance, Technical Analysis.</p>
+            </div>
+
+            <div class="detail-tab" id="ap-wf">
+              <h4>Walk-Forward Validation</h4>
+              <p class="detail-scope-label">Why standard train/test split fails for time series</p>
+              <ul>
+                <li>A random split on time-series data would let the model train on 2022 and test on 2019 &mdash; it would learn from the future to predict the past, which is unrealistic and causes severe data leakage.</li>
+                <li>Instead: initial training window = 70% (~2,767 rows). Test window = next 60 trading days. After each window, training expands and all 7 models retrain fresh on the expanded history.</li>
+                <li>19 total windows, ~1,140 out-of-sample test days &mdash; mimics real production: model retrained periodically on all data seen so far, never given future information.</li>
+                <li><code>StandardScaler</code> fitted only on each window&rsquo;s training data, then <code>.transform()</code> applied to test &mdash; prevents test-set statistics leaking into scaling. All predictions pooled across windows for final metric aggregation.</li>
+              </ul>
+              <p class="detail-skills">Skills: Walk-Forward Validation, Pipeline Design, StandardScaler, Data Leakage Prevention.</p>
+            </div>
+
+            <div class="detail-tab" id="ap-res">
+              <h4>Model Results</h4>
+              <p class="detail-scope-label">Aggregated across all 19 walk-forward windows</p>
+              <ul>
+                <li><strong>Ridge Regression (best):</strong> MAE $1.10 &middot; RMSE $1.52 &middot; R&sup2; 0.9986 &middot; MAPE 0.59% &mdash; beats the Naive baseline ($2.33 MAE) by 53%.</li>
+                <li><strong>Lasso:</strong> MAE $1.61 &middot; R&sup2; 0.9969. <strong>ElasticNet:</strong> MAE $6.41. <strong>Naive:</strong> MAE $2.33, R&sup2; 0.9934.</li>
+                <li><strong>Why tree models underperformed:</strong> Gradient Boosting (MAE $4.61) and Random Forest (MAE $4.93) can&rsquo;t extrapolate beyond training price ranges &mdash; AAPL&rsquo;s upward trend meant trees systematically underestimated later-window prices.</li>
+                <li><strong>Control feature check:</strong> Ridge with control scored $1.1026 vs $1.1008 without &mdash; near-identical, confirming the pipeline isn&rsquo;t fooled by noise. Results visualised as actual-vs-predicted price charts, per-model error plots, and cumulative MAE over time.</li>
+              </ul>
+              <p class="detail-skills">Skills: Ridge Regression, MAE, RMSE, R&sup2;, MAPE, Model Benchmarking, Matplotlib, Seaborn.</p>
+            </div>
+
+          </div>
         </div>
-
-        <div class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">Pandas</span>
-          <span class="tag">scikit-learn</span>
-          <span class="tag">Random Forest</span>
-          <span class="tag">Tkinter</span>
-          <span class="tag">Joblib</span>
-        </div>
-
-        <a
-          class="project-link"
-          href="project-details.html?project=cardiovascular">
-
-          View Project Details →
-
-        </a>
-
       </div>
 
-
-      <!-- PROJECT 02 -->
+      <!-- PROJECT 02: HYBRID CNN -->
       <div class="project-card reveal">
-
-        <div class="project-num">02</div>
-
-        <div class="project-title">
-          Hybrid CNN–Token Image Classifier
+        <div class="project-card-header">
+          <div class="project-card-left">
+            <div class="project-num">02</div>
+            <h3 class="project-title">Hybrid Image Classification</h3>
+            <p class="project-summary">
+              A lightweight 193K-parameter hybrid architecture on CIFAR-10 that fuses a CNN backbone for local feature extraction with a patch-token branch for global context &mdash; conceptually similar to Vision Transformers but far smaller. Achieved 88%+ accuracy on balanced data. Also evaluated on a moderately imbalanced dataset with class-weighted training, and used Grad-CAM for visual explainability.
+            </p>
+            <p class="project-during">During this project,</p>
+            <ul class="project-bullets">
+              <li>Performed EDA on CIFAR-10: class distribution analysis, pixel intensity statistics, and visualisation of sample images using Matplotlib and Seaborn to inform preprocessing decisions and augmentation strategy.</li>
+              <li>Designed the tiny-HLGA architecture: Conv(32/64/128) CNN backbone produces a 4&times;4&times;128 feature map, split into 2&times;2 patch tokens via <code>tf.image.extract_patches()</code>, projected to 128-dim via Dense, globally averaged, then fused with the CNN&rsquo;s own GAP output before the softmax head.</li>
+              <li>Simulated moderate class imbalance by reducing Cat, Deer, Dog classes to 20% of samples. Applied <code>compute_class_weight('balanced')</code> &mdash; affected classes received ~3.8&times; higher loss penalty, significantly recovering minority class recall.</li>
+              <li>Implemented Grad-CAM on the final conv layer (conv3): gradients of the predicted class score global-average-pooled into per-channel importance weights, multiplied back into activations, summed, upsampled to 32&times;32, and overlaid on the original image to confirm the model focuses on object regions, not background noise.</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">Keras</span>
+              <span class="tag">CNN</span>
+              <span class="tag">CIFAR-10</span>
+              <span class="tag">Grad-CAM</span>
+              <span class="tag">Class Weighting</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Matplotlib</span>
+              <span class="tag">Seaborn</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn-details" onclick="toggleDetails(this)">View Project Details &#8595;</button>
+              <a class="project-link" href="https://github.com/siddharthhsinghh/Hybrid-Image-Classification" target="_blank" rel="noopener">GitHub &rarr;</a>
+            </div>
+          </div>
+          <div class="project-card-right">
+            <div class="project-icon-box">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="80" height="80" rx="12" fill="rgba(123,94,167,0.1)"/>
+                <rect x="10" y="10" width="26" height="26" rx="3" fill="rgba(0,229,255,0.12)" stroke="#00e5ff" stroke-width="1.5"/>
+                <rect x="44" y="10" width="26" height="26" rx="3" fill="rgba(0,229,255,0.06)" stroke="#444" stroke-width="1.5"/>
+                <rect x="10" y="44" width="26" height="26" rx="3" fill="rgba(0,229,255,0.06)" stroke="#444" stroke-width="1.5"/>
+                <rect x="44" y="44" width="26" height="26" rx="3" fill="rgba(123,94,167,0.25)" stroke="#7b5ea7" stroke-width="1.5"/>
+                <line x1="36" y1="23" x2="44" y2="23" stroke="#00e5ff" stroke-width="1.5"/>
+                <line x1="23" y1="36" x2="23" y2="44" stroke="#00e5ff" stroke-width="1.5"/>
+                <line x1="36" y1="57" x2="44" y2="57" stroke="#7b5ea7" stroke-width="1.5"/>
+                <line x1="57" y1="36" x2="57" y2="44" stroke="#7b5ea7" stroke-width="1.5"/>
+              </svg>
+            </div>
+          </div>
         </div>
 
-        <div class="project-desc">
-          A hybrid deep-learning image classifier that combines
-          convolutional feature extraction with token-based global
-          context modeling. The project also addresses class
-          imbalance and uses Grad-CAM for model interpretability.
+        <div class="project-details">
+          <div class="detail-sidebar">
+            <p class="detail-nav-item active" onclick="switchTab(this,'cn-ov')">Overview</p>
+            <p class="detail-nav-item" onclick="switchTab(this,'cn-arch')">Architecture</p>
+            <p class="detail-nav-item" onclick="switchTab(this,'cn-imb')">Imbalance Handling</p>
+            <p class="detail-nav-item" onclick="switchTab(this,'cn-gc')">Grad-CAM</p>
+            <p class="detail-nav-item" onclick="switchTab(this,'cn-res')">Results</p>
+          </div>
+          <div class="detail-content">
+
+            <div class="detail-tab active" id="cn-ov">
+              <h4>Overview</h4>
+              <ul>
+                <li>CIFAR-10: 60,000 32&times;32 RGB images across 10 classes. Pixels normalized from [0,255] to [0,1]. Train split 90/10 into 45,000 train / 5,000 val; official 10,000-image test set held out for final evaluation.</li>
+                <li>Problem: CNNs learn local patterns well (edges, textures, shapes) but miss global context. Vision Transformers capture global context but require enormous datasets. This hybrid gets both at only ~193K parameters.</li>
+                <li>Two models trained from scratch with <code>clear_session()</code> between runs: one on balanced data, one on moderately imbalanced data with class weighting &mdash; same architecture and epoch count for a fair comparison.</li>
+                <li><code>ModelCheckpoint(save_best_only=True, monitor='val_accuracy')</code> saves best-epoch weights and reloads them after training, so the evaluated model is best on validation, not the last epoch.</li>
+              </ul>
+            </div>
+
+            <div class="detail-tab" id="cn-arch">
+              <h4>Architecture (tiny-HLGA)</h4>
+              <p class="detail-scope-label">How local and global features are combined</p>
+              <ul>
+                <li><strong>CNN Backbone:</strong> Conv2D(32)&rarr;ReLU&rarr;MaxPool &rarr; Conv2D(64)&rarr;ReLU&rarr;MaxPool &rarr; Conv2D(128)&rarr;ReLU. Produces a 4&times;4&times;128 feature map. Each layer learns progressively higher-level patterns: edges &rarr; textures &rarr; object parts.</li>
+                <li><strong>Patch-Token Branch:</strong> <code>tf.image.extract_patches()</code> slices the feature map into non-overlapping 2&times;2 patches &rarr; 16 tokens. Each token projected through <code>Dense(128, relu)</code> (a mini linear embedding, similar to Vision Transformer tokenization) &rarr; <code>GlobalAveragePooling1D</code> produces a 128-dim regional-summary vector.</li>
+                <li><strong>Feature Fusion:</strong> CNN GAP (128-dim) + Token branch (128-dim) &rarr; concatenated &rarr; Dense(128, relu) &rarr; Dropout(0.3) &rarr; Dense(10, softmax). Dropout prevents co-adaptation of neurons, reducing overfitting.</li>
+                <li><strong>Training:</strong> Adam lr=1e-3, sparse_categorical_crossentropy, batch 128. <code>tf.data</code> pipeline with shuffle &rarr; augmentation (RandomFlip, RandomCrop) &rarr; batch &rarr; prefetch(AUTOTUNE) for efficient CPU/GPU overlap.</li>
+              </ul>
+              <p class="detail-skills">Skills: TensorFlow, Keras, CNN Design, Patch Tokenization, tf.data, Dropout, Data Augmentation.</p>
+            </div>
+
+            <div class="detail-tab" id="cn-imb">
+              <h4>Imbalance Handling</h4>
+              <p class="detail-scope-label">Simulating and correcting class imbalance</p>
+              <ul>
+                <li>Real-world datasets rarely have equal class distributions. A model trained on imbalanced data becomes biased toward majority classes &mdash; it can achieve high overall accuracy while completely failing on rare classes.</li>
+                <li><code>make_moderate_imbalance()</code> subsamples Cat, Deer, Dog (classes 3/4/5) to 20% of their original count; all other classes stay full. Creates a controlled imbalanced scenario to study model behaviour under realistic conditions.</li>
+                <li><code>sklearn.utils.class_weight.compute_class_weight('balanced')</code> computes per-class multipliers inversely proportional to frequency: affected classes get ~3.8&times; penalty, majority classes ~0.76&times;. Passed to <code>model.fit(class_weight=cw_imb)</code> &mdash; loss function penalizes minority-class mistakes more heavily during backpropagation.</li>
+                <li>Macro F1 used as primary metric (not accuracy): each class contributes equally regardless of sample count &mdash; gives a fair picture of performance on minority classes, not just majority ones.</li>
+              </ul>
+              <p class="detail-skills">Skills: Class Weighting, sklearn metrics, Macro F1, Precision/Recall, Confusion Matrix.</p>
+            </div>
+
+            <div class="detail-tab" id="cn-gc">
+              <h4>Grad-CAM Explainability</h4>
+              <p class="detail-scope-label">Understanding what the model looks at</p>
+              <ul>
+                <li>Grad-CAM (Gradient-weighted Class Activation Mapping) answers: &ldquo;Which spatial regions of the image most influenced this prediction?&rdquo; &mdash; making the model less of a black box.</li>
+                <li>Process: choose predicted class &rarr; compute gradients of the class score w.r.t. the last conv layer (conv3) activations &rarr; global-average-pool gradients into per-channel importance weights &rarr; multiply weights into activations &rarr; sum channels &rarr; apply ReLU.</li>
+                <li>Resulting coarse heatmap upsampled from 4&times;4 to 32&times;32 and overlaid on the original image using <code>cv2.addWeighted()</code> &mdash; warm colours indicate high-importance regions, cool colours indicate low importance.</li>
+                <li>Correctly classified vs. misclassified samples compared side-by-side: correctly classified images show activation centred on the object; misclassified ones often show activation on background features, identifying failure modes.</li>
+              </ul>
+              <p class="detail-skills">Skills: Grad-CAM, TensorFlow GradientTape, OpenCV (cv2), Model Interpretability.</p>
+            </div>
+
+            <div class="detail-tab" id="cn-res">
+              <h4>Results</h4>
+              <p class="detail-scope-label">Evaluated on the 10,000-image official test set</p>
+              <ul>
+                <li><strong>Balanced (45,000 images):</strong> 88%+ accuracy across all 10 CIFAR-10 classes. Val accuracy climbed from 37% &rarr; 63.7% in demo run (8 epochs); full training (40&ndash;80 epochs) reaches 88%+.</li>
+                <li><strong>Imbalanced (Cat/Deer/Dog at 20%, class weighting):</strong> Test accuracy 59.98%, macro F1 60.25% on the 8-epoch demo &mdash; minority class recall significantly recovered vs. training without class weighting.</li>
+                <li><strong>Outperformed baselines:</strong> hybrid architecture outperformed standalone CNN and transformer-only baselines on both balanced and imbalanced splits &mdash; fusion of local and global features provides complementary signal.</li>
+                <li>Grad-CAM confirmed meaningful spatial activations on object regions rather than background, validating the model classifies for the right reasons rather than spurious correlations.</li>
+              </ul>
+              <p class="detail-skills">Skills: Accuracy, Macro F1, Precision, Recall, Confusion Matrix, Grad-CAM, TensorFlow.</p>
+            </div>
+
+          </div>
         </div>
-
-        <div class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">TensorFlow</span>
-          <span class="tag">Keras</span>
-          <span class="tag">CNN</span>
-          <span class="tag">Grad-CAM</span>
-          <span class="tag">CIFAR-10</span>
-        </div>
-
-        <a
-          class="project-link"
-          href="project-details.html?project=hybrid">
-
-          View Project Details →
-
-        </a>
-
       </div>
 
-
-      <!-- PROJECT 03 -->
+      <!-- PROJECT 03: CARDIOVASCULAR -->
       <div class="project-card reveal">
-
-        <div class="project-num">03</div>
-
-        <div class="project-title">
-          Apple Stock Price Prediction
+        <div class="project-card-header">
+          <div class="project-card-left">
+            <div class="project-num">03</div>
+            <h3 class="project-title">Cardiovascular Disease Prediction</h3>
+            <p class="project-summary">
+              End-to-end supervised ML pipeline on 70,000 patient records: data ingestion with error handling, feature engineering (age-in-days conversion), StandardScaler preprocessing, RandomForest (300 trees) training on 56,000 samples, joblib model persistence, and a Tkinter desktop GUI for live patient-level risk predictions. Achieved 70.8% accuracy with balanced precision/recall of 0.71 across both classes.
+            </p>
+            <p class="project-during">During this project,</p>
+            <ul class="project-bullets">
+              <li>Loaded the Kaggle Cardiovascular Disease dataset (70,000 rows, semicolon-delimited). Converted age from days to years (<code>df["age"] = (df["age"] / 365).astype(int)</code>). Handled missing file with <code>sys.exit(1)</code> for clean failure rather than a raw traceback.</li>
+              <li>Applied <code>StandardScaler</code> to all 11 features and saved the fitted scaler to <code>scaler.pkl</code> &mdash; live predictions use <code>scaler.transform()</code>, not <code>fit_transform()</code>, ensuring identical preprocessing between training and inference.</li>
+              <li>Trained <code>RandomForestClassifier(n_estimators=300, n_jobs=-1)</code> on 56,000 samples with <code>stratify=y</code> to preserve the ~50/50 class ratio. Implemented <code>load_or_train_model()</code> with joblib &mdash; trains once, loads instantly on all subsequent runs.</li>
+              <li>Built <code>CardioPredictorApp</code> in Tkinter: dynamic widget generation from a <code>FIELD_SPECS</code> dict (<code>tk.Entry</code> for numerics, <code>ttk.Combobox(state="readonly")</code> for categoricals), with color-coded prediction output (red = high risk, green = no risk).</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">pandas</span>
+              <span class="tag">scikit-learn</span>
+              <span class="tag">Random Forest</span>
+              <span class="tag">joblib</span>
+              <span class="tag">Tkinter</span>
+              <span class="tag">StandardScaler</span>
+              <span class="tag">EDA</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn-details" onclick="toggleDetails(this)">View Project Details &#8595;</button>
+              <a class="project-link" href="https://github.com/siddharthhsinghh/Cardiovascular-Disease-Prediction" target="_blank" rel="noopener">GitHub &rarr;</a>
+            </div>
+          </div>
+          <div class="project-card-right">
+            <div class="project-icon-box">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="80" height="80" rx="12" fill="rgba(255,80,80,0.07)"/>
+                <path d="M40 60 C40 60 16 44 16 29 C16 21 23 15 31 17 C35 18 38 21 40 25 C42 21 45 18 49 17 C57 15 64 21 64 29 C64 44 40 60 40 60Z" fill="rgba(255,80,80,0.12)" stroke="#ff5050" stroke-width="2"/>
+                <polyline points="24,40 30,30 36,36 42,22 48,28 56,20" stroke="#00e5ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
         </div>
 
-        <div class="project-desc">
-          A time-series regression project that uses historical
-          Apple market data and engineered technical indicators
-          to predict closing prices and compare multiple
-          machine-learning models.
+        <div class="project-details">
+          <div class="detail-sidebar">
+            <p class="detail-nav-item active" onclick="switchTab(this,'cd-ov')">Overview</p>
+            <p class="detail-nav-item" onclick="switchTab(this,'cd-pipe')">ML Pipeline</p>
+            <p class="detail-nav-item" onclick="switchTab(this,'cd-gui')">GUI Layer</p>
+            <p class="detail-nav-item" onclick="switchTab(this,'cd-res')">Performance</p>
+          </div>
+          <div class="detail-content">
+
+            <div class="detail-tab active" id="cd-ov">
+              <h4>Overview</h4>
+              <ul>
+                <li>Predicts cardiovascular disease risk (0 = no disease, 1 = high risk) from 11 health and lifestyle inputs: age, gender, height, weight, systolic BP, diastolic BP, cholesterol, glucose, smoking, alcohol, and physical activity.</li>
+                <li>Dataset: Kaggle Cardiovascular Disease (<code>cardio_train.csv</code>), 70,000 rows, semicolon-delimited. If the file is missing, <code>sys.exit(1)</code> exits cleanly with a clear message rather than crashing with a raw traceback.</li>
+                <li>Supervised binary classification: the model learns from 70,000 labeled records (cardio 0/1) and predicts the same for new unseen patients. This is a decision-support tool, not a clinical diagnostic system.</li>
+                <li>Full pipeline: raw CSV &rarr; age conversion &rarr; feature selection &rarr; scaling &rarr; RandomForest trained on 56K &rarr; validated on 14K &rarr; persisted to disk &rarr; Tkinter GUI for live predictions.</li>
+              </ul>
+            </div>
+
+            <div class="detail-tab" id="cd-pipe">
+              <h4>ML Pipeline</h4>
+              <p class="detail-scope-label">Step by step</p>
+              <ul>
+                <li><strong>Feature Engineering:</strong> age converted from days to years (Kaggle quirk in raw data). 11 features selected: age, gender, height, weight, ap_hi, ap_lo, cholesterol, gluc, smoke, alco, active. Target: <code>cardio</code> (0/1).</li>
+                <li><strong>Preprocessing:</strong> <code>StandardScaler</code> applied to all 11 features. Random Forest doesn&rsquo;t strictly require scaling (tree splits are scale-invariant), but it keeps the pipeline model-agnostic for future algorithm swaps. Fitted scaler saved as <code>scaler.pkl</code>.</li>
+                <li><strong>Train/Test Split:</strong> <code>train_test_split(test_size=0.2, random_state=42, stratify=y)</code> &mdash; <code>stratify=y</code> preserves the ~50/50 disease ratio in both splits; <code>random_state=42</code> ensures a reproducible split. 56,000 train / 14,000 test.</li>
+                <li><strong>Model:</strong> <code>RandomForestClassifier(n_estimators=300, n_jobs=-1)</code> &mdash; 300 trees each on a random bootstrap sample, majority vote for final prediction. Three objects persisted via <code>joblib.dump()</code>: model, scaler, feature list. <code>load_or_train_model()</code> loads instantly if .pkl files exist; retrains only on first run.</li>
+              </ul>
+              <p class="detail-skills">Skills: pandas, scikit-learn, StandardScaler, RandomForest, joblib, Feature Engineering.</p>
+            </div>
+
+            <div class="detail-tab" id="cd-gui">
+              <h4>GUI Layer (Tkinter)</h4>
+              <p class="detail-scope-label">How the desktop application works</p>
+              <ul>
+                <li><code>CardioPredictorApp</code> class wraps the full interface. <code>_build_layout()</code> dynamically generates one labeled input widget per feature by looping over a <code>FIELD_SPECS</code> dictionary &mdash; not hardcoding 11 separate widget blocks, making it trivial to add or remove features.</li>
+                <li>Numeric fields (age, height, weight, BP) use <code>tk.Entry</code>; categorical fields (gender, cholesterol, glucose, smoking, alcohol, activity) use <code>ttk.Combobox(state="readonly")</code> &mdash; locks dropdown to valid values, prevents invalid category input entirely.</li>
+                <li>On Predict: <code>_collect_inputs()</code> reads all 11 values, casts to float, raises a clear user-facing error if anything is missing or invalid &mdash; program never crashes on bad input, always shows a meaningful message.</li>
+                <li>Input vector passes through <code>scaler.transform()</code> (same scaler from training, never re-fitted) &rarr; <code>model.predict()</code> &rarr; result displayed with color coding: red for high risk, green for no risk detected.</li>
+              </ul>
+              <p class="detail-skills">Skills: Tkinter, ttk.Combobox, Event-driven programming, Exception handling, UX design.</p>
+            </div>
+
+            <div class="detail-tab" id="cd-res">
+              <h4>Performance</h4>
+              <p class="detail-scope-label">Evaluated on 14,000 held-out samples</p>
+              <ul>
+                <li>Overall accuracy: <strong>70.8%</strong> on the stratified 20% test set (14,000 samples never seen during training).</li>
+                <li>Precision, Recall, F1: <strong>0.71</strong> for both classes &mdash; balanced error rates, no systematic over- or under-diagnosis of either class.</li>
+                <li>Confusion matrix: ~4,956 true negatives, ~4,961 true positives, ~2,032 false positives, ~2,051 false negatives &mdash; nearly symmetric, confirming the model doesn&rsquo;t favour one class.</li>
+                <li>70&ndash;73% accuracy is consistent with published benchmarks on this dataset. The performance ceiling is largely set by label noise in self-reported cholesterol and glucose values in the original Kaggle data, not by model capacity.</li>
+              </ul>
+              <p class="detail-skills">Skills: Classification Report, Confusion Matrix, Precision/Recall/F1, ROC-AUC, scikit-learn.</p>
+            </div>
+
+          </div>
         </div>
-
-        <div class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">Pandas</span>
-          <span class="tag">NumPy</span>
-          <span class="tag">yfinance</span>
-          <span class="tag">Feature Engineering</span>
-          <span class="tag">Walk-Forward Validation</span>
-        </div>
-
-        <a
-          class="project-link"
-          href="project-details.html?project=apple">
-
-          View Project Details →
-
-        </a>
-
       </div>
 
     </div>
-
   </div>
 </section>
 
-<!-- =========================
-     EXPERIENCE
-========================= -->
-
+<!-- EXPERIENCE -->
 <section id="experience">
-
   <div class="container">
-
-    <span class="section-label reveal">
-      experience
-    </span>
-
-    <h2 class="section-title reveal">
-      Where I've Worked
-    </h2>
-
+    <span class="section-label reveal">experience</span>
+    <h2 class="section-title reveal">Where I've Worked</h2>
     <div class="section-divider reveal"></div>
-
     <div class="timeline reveal">
-
       <div class="timeline-item">
-
-        <div class="timeline-date">
-          March 2026 - June 2026
-        </div>
-
-        <div class="timeline-role">
-          Business Analyst Intern
-        </div>
-
-        <div class="timeline-company">
-          ValueDX
-        </div>
-
+        <div class="timeline-date">March 2026 &ndash; June 2026</div>
+        <div class="timeline-role">Business Analyst Intern</div>
+        <div class="timeline-company">ValueDX &middot; Pune, India</div>
         <div class="timeline-desc">
-
-          • Received hands-on training in automation concepts
-          and business processes.<br>
-
-          • Assisted in gathering and documenting business
-          requirements from stakeholders.<br>
-
-          • Prepared and maintained Business Requirement
-          Documents (BRDs) for project planning.<br>
-
-          • Collaborated with business and technical teams
-          to analyze requirements and improve workflows.<br>
-
-          • Supported project documentation and ensured
-          requirements were clearly communicated to the
-          development.
-
+          &bull; Prepared and maintained Business Requirement Documents (BRDs) to capture business requirements, project scope, and functional expectations.<br>
+          &bull; Collaborated with business and technical teams to analyse requirements, organise information, and support workflow improvements.<br>
+          &bull; Supported data-driven business analysis by reviewing requirements and ensuring information was accurately documented and communicated to the development team.<br>
+          &bull; Explored Postman during training for API testing fundamentals, gaining exposure to how data flows between systems and services.
         </div>
-
       </div>
-
     </div>
-
   </div>
-
 </section>
 
-
-<!-- =========================
-     CONTACT
-========================= -->
-
+<!-- CONTACT -->
 <section id="contact">
-
   <div class="container">
-
-    <span class="section-label reveal">
-      contact
-    </span>
-
-    <h2 class="section-title reveal">
-      Let's Talk
-    </h2>
-
-    <div
-      class="section-divider"
-      style="margin-bottom:1.4rem">
-    </div>
-
-    <p class="contact-sub reveal">
-
-      Always happy to chat about data, ML projects,
-      or opportunities. Drop me a message.
-
-    </p>
-
+    <span class="section-label reveal">contact</span>
+    <h2 class="section-title reveal">Let's Talk</h2>
+    <div class="section-divider" style="margin-bottom:1.4rem"></div>
+    <p class="contact-sub reveal">Always happy to chat about data, ML projects, or opportunities. Drop me a message.</p>
     <div class="contact-links reveal">
 
-      <a
-        class="contact-link"
-        href="https://github.com/siddharthhsinghh">
-
-        <svg viewBox="0 0 24 24">
-
-          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
-
-        </svg>
-
+      <a class="contact-link" href="https://github.com/siddharthhsinghh" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
         GitHub
-
       </a>
 
-
-      <a
-        class="contact-link"
-        href="https://www.linkedin.com/in/siddharth-singh-0a5b6325">
-
-        <svg viewBox="0 0 24 24">
-
-          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-
-        </svg>
-
+      <a class="contact-link" href="https://www.linkedin.com/in/siddharth-singh-0a5b63259" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         LinkedIn
-
       </a>
 
-
-      <a
-        class="contact-link"
-        href="#">
-
-        <svg viewBox="0 0 24 24">
-
-          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-
-        </svg>
-
-        siddharth100305@gmail.com
-
-      </a>
+      <div class="email-wrap">
+        <a class="contact-link" href="mailto:siddharth100305@gmail.com">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          siddharth100305@gmail.com
+        </a>
+        <button class="copy-btn" onclick="copyEmail(this)" title="Copy email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+          </svg>
+        </button>
+      </div>
 
     </div>
-
   </div>
-
 </section>
 
-
 <footer>
-
-  © 2026 Siddharth Singh · Built with HTML, CSS &amp; JavaScript
-
+  &copy; 2026 Siddharth Singh &nbsp;&middot;&nbsp; Built with HTML, CSS &amp; JavaScript
 </footer>
 
-
-<!-- =========================
-     PROJECT INTERACTION
-========================= -->
-
-<script>
-
-document
-  .querySelectorAll('.project-details-btn')
-  .forEach(button => {
-
-    button.addEventListener('click', () => {
-
-      const panel =
-        document.getElementById(
-          'details-' + button.dataset.project
-        );
-
-      const isOpen =
-        !panel.hasAttribute('hidden');
-
-
-      /*
-       * Close all project panels
-       */
-
-      document
-        .querySelectorAll('.project-detail-panel')
-        .forEach(p =>
-          p.setAttribute('hidden', '')
-        );
-
-
-      /*
-       * Reset all plus/minus icons
-       */
-
-      document
-        .querySelectorAll('.project-details-btn span')
-        .forEach(s =>
-          s.textContent = '+'
-        );
-
-
-      /*
-       * Open selected project
-       */
-
-      if (!isOpen) {
-
-        panel.removeAttribute('hidden');
-
-        button
-          .querySelector('span')
-          .textContent = '−';
-
-      }
-
-    });
-
-  });
-
-
-
-/*
- * Project tabs
- */
-
-document
-  .querySelectorAll('.project-detail-panel')
-  .forEach(panel => {
-
-    panel
-      .querySelectorAll('.project-tab')
-      .forEach(tab => {
-
-        tab.addEventListener('click', () => {
-
-          const target =
-            tab.dataset.tab;
-
-
-          /*
-           * Activate selected tab
-           */
-
-          panel
-            .querySelectorAll('.project-tab')
-            .forEach(t =>
-
-              t.classList.toggle(
-                'active',
-                t === tab
-              )
-
-            );
-
-
-          /*
-           * Show selected content
-           */
-
-          panel
-            .querySelectorAll(
-              '.project-tab-content'
-            )
-            .forEach(content =>
-
-              content.classList.toggle(
-                'active',
-                content.id === target
-              )
-
-            );
-
-        });
-
-      });
-
-  });
-
-</script>
-
-
 <script src="script.js"></script>
-
 </body>
 </html>
